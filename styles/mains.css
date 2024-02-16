@@ -1,0 +1,227 @@
+body {
+  background: #a08b71;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Roboto, sans-serif;
+  margin: 0;
+}
+
+.absolute {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.phone {
+  height: 932px;
+  width: 430px;
+  background: #e6d7c4;
+  border-radius: 60px;
+  position: relative;
+}
+.phone-glass {
+  height: 932px;
+  width: 430px;
+  box-shadow: inset 4px -4px 8px rgba(0, 0, 0, 0.75), inset -4px 4px 8px rgba(255, 255, 255, 0.75), -80px 80px 120px rgba(0, 0, 0, 0.25);
+  border-radius: 60px;
+  mix-blend-mode: overlay;
+}
+.phone-inner-glass {
+  height: 912px;
+  width: 410px;
+  background: black;
+  border-radius: 55px;
+  border: 1px solid white;
+}
+.phone-top-dent {
+  height: 40px;
+  width: 180px;
+  background: black;
+  top: 40px;
+  border-radius: 0px 0px 20px 20px;
+}
+
+.phone-content {
+  height: 882px;
+  width: 380px;
+  background: #cbb598;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: center;
+}
+
+button {
+  height: 80px;
+  width: 80px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-family: Roboto, sans-serif;
+  font-size: 24px;
+  color: #704e2e;
+}
+
+.calculator__display {
+  height: 100px;
+  color: white;
+  font-size: 60px;
+  margin: 30px;
+}
+
+#keys {
+  background: #a48f75;
+  border-radius: 25px 25px 0px 0px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 8px;
+  grid-row-gap: 8px;
+  position: relative;
+  padding: 30px;
+}
+
+.top-display {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 30px;
+}
+
+#equation-history {
+  margin-bottom: 20px;
+  text-align: right;
+  color: white;
+  font-size: 22px;
+}
+
+input {
+  text-align: right;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 60px;
+  width: 100%;
+}
+
+.number {
+  background: #704e2e;
+  position: relative;
+  color: white;
+}
+
+.key--operator {
+  background: #cbb598;
+}
+
+.clear {
+  grid-area: 1/1/2/3;
+  width: 166px;
+  background: #cbb598;
+}
+
+.mod {
+  grid-area: 1/3/2/4;
+}
+
+.add {
+  grid-area: 1/4/2/5;
+}
+
+.seven {
+  grid-area: 2/1/3/2;
+}
+
+.eight {
+  grid-area: 2/2/3/3;
+}
+
+.nine {
+  grid-area: 2/3/3/4;
+}
+
+.subtract {
+  grid-area: 2/4/3/5;
+}
+
+.four {
+  grid-area: 3/1/4/2;
+}
+
+.five {
+  grid-area: 3/2/4/3;
+}
+
+.six {
+  grid-area: 3/3/4/4;
+}
+
+.times {
+  grid-area: 3/4/4/5;
+}
+
+.one {
+  grid-area: 4/1/5/2;
+}
+
+.two {
+  grid-area: 4/2/5/3;
+}
+
+.three {
+  grid-area: 4/3/5/4;
+}
+
+.divide {
+  grid-area: 4/4/5/5;
+}
+
+.zero {
+  grid-area: 5/1/6/2;
+}
+
+.decimal {
+  grid-area: 5/2/6/3;
+}
+
+.equal {
+  grid-area: 5/3/6/5;
+  width: 166px;
+  background: #0d1b1e;
+  color: white;
+}
+
+.is-depressed {
+  border: 1px solid white;
+}
+
+@media only screen and (max-width: 920px) {
+  .phone {
+    height: 100vh;
+    width: 100vw;
+    background: #e6d7c4;
+    border-radius: 0px;
+    position: relative;
+  }
+  .phone-glass {
+    display: none;
+  }
+  .phone-inner-glass {
+    display: none;
+  }
+  .phone-top-dent {
+    display: none;
+  }
+  .phone-content {
+    height: 100%;
+    width: 100%;
+    border-radius: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+}/*# sourceMappingURL=mains.css.map */
