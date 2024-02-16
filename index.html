@@ -8,16 +8,16 @@
 </head>
 <body>
     <div class="phone">
-        <div class="phone-glass absolute"></div>
-        <div class="phone-inner-glass absolute"></div>
-        <div class="phone-content absolute calculator">
+        <div class="phone-glass desktop"></div>
+        <div class="phone-inner-glass desktop"></div>
+        <div class="phone-content calculator">
           <div class="top-display">
             <div id="equation-history"></div>
             <input id="display" readonly class="display">
       
           </div>
-      
-          <div id="keys">
+      <div class="container">
+          <div id="keys" class="mobile-keys">
             <button onclick="appendToDisplay('+')" class="operator add">+</button>
             <button onclick="appendToDisplay('%')" class="operator mod">%</button>
             <button onclick="appendToDisplay('-')" class="operator subtract">-</button>
@@ -37,10 +37,14 @@
             <button onclick="calculate()" class="equal" id="equal">=</button>
             <button onclick="clearDisplay()" class="clear">clear</button>
           </div>
+          </div>
+          
         </div>
-        <div class="phone-top-dent absolute"></div>
+        <div class="phone-top-dent desktop"></div>
       </div> 
 
+     
+      
       <script src="calculator.js"></script>
 </body>
 </html>

@@ -1,0 +1,68 @@
+@media only screen and (max-width: 920px) {
+    body {
+        display: block;
+    }
+    
+    .desktop {
+        display: none;
+    }
+
+    .phone {
+        height: 100%;
+        width: 100%;
+        border-radius: 0;        
+    }
+
+   
+
+    .phone-content {
+        height: 100%;
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .top-display {
+        height: 40%;
+    }
+
+.container {
+    width: 100%;
+    height: 70%;
+    background: #a48f75;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px 20px 0px 0px;
+}
+
+    #keys {
+        width: 90%;
+        padding: 0;
+        margin: 0 auto;
+        grid-column-gap: 4px;
+        grid-row-gap:4px;
+        grid-column: 80px;
+        height: 60%;
+        height: 90%;
+        
+        
+    }
+
+    .operator {
+        height: 100%;
+        width: 100%;
+    }
+
+    .number {
+        height: 100%;
+        width: 100%;
+    }
+
+    .clear, .equal {
+        height: 100%;
+        width:  100%;
+    }
+
+   
+    
+}

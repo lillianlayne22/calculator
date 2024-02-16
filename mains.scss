@@ -1,3 +1,5 @@
+
+
 body {
     background: #a08b71;
     display: flex;
@@ -30,6 +32,7 @@ body {
         -80px 80px 120px rgba(0, 0, 0, 0.25);
       border-radius: 60px;
       mix-blend-mode: overlay;
+      @extend .absolute;
     }
   
     &-inner-glass {
@@ -38,6 +41,7 @@ body {
       background: black;
       border-radius: 55px;
       border: 1px solid white;
+      @extend .absolute;
     }
   
     &-top-dent {
@@ -46,6 +50,7 @@ body {
       background: black;
       top: 40px;
       border-radius: 0px 0px 20px 20px;
+      @extend .absolute;
     }
   }
   
@@ -58,6 +63,7 @@ body {
     flex-direction: column;
     overflow: hidden;
     align-items: center;
+    @extend .absolute;
   }
   
   button {
@@ -186,33 +192,7 @@ body {
     border: 1px solid white;
   }
   
-  @media only screen and (max-width: 920px) {
-    .phone {
-      height: 100vh;
-      width: 100vw;
-      background: #e6d7c4;
-      border-radius: 0px;
-      position: relative;
-  
-      &-glass {
-        display: none;
-      }
-  
-      &-inner-glass {
-        display: none;
-      }
-  
-      &-top-dent {
-        display: none;
-      }
-    }
-  
-    .phone-content {
-      height: 100%;
-      width: 100%;
-      border-radius: 0;
-      display: flex;
-      justify-content: space-between;
-    }
-  }
-  
+
+
+
+  @import 'mobile';
